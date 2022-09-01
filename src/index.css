@@ -15,9 +15,9 @@ section {
 
 :root {
   --color-bg: #000000;
-  --color-bg-variant: #2c2c6c;
+  --color-bg-variant: #28282a;
   --color-primary: #e7a28f;
-  --color-primary-variant: #f0bd9e;
+  --color-primary-variant: #fbd1b7;
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
 
@@ -37,7 +37,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: var(--color-bg);
   /* background-image: url(../src/assets/bg-texture.png); */
   color: var(--color-white);

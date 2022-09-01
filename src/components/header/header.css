@@ -34,6 +34,43 @@ header {
   top: 60vh;
 }
 
+.star {
+  position: absolute;
+  width: 60px;
+}
+.string {
+  position: absolute;
+  width: 1px;
+  height: 200px;
+  background-color: #fbfefc31;
+  left: 30px;
+  top: -195px;
+}
+
+.laptop {
+  position: absolute;
+  z-index: -10;
+  right: -250px;
+  transform: rotate(-20deg);
+  width: 800px;
+}
+
+.hero-title {
+  padding-top: 5rem;
+  color: var(--color-primary-variant);
+  font-size: clamp(1.5rem, 5vw, 5rem);
+  line-height: 1.4;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    97.54deg,
+    #e7a28f 3.52%,
+    #f9d6ac 41.89%,
+    #fbfefc 96.77%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
 @media screen and (max-width: 600px) {
   header {
     height: 100vh;
