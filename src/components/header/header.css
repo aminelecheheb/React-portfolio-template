@@ -37,22 +37,24 @@ header {
 .star {
   position: absolute;
   width: 60px;
+  right: 0;
 }
 .string {
   position: absolute;
   width: 1px;
   height: 200px;
   background-color: #fbfefc31;
-  left: 30px;
+  right: 30px;
   top: -195px;
 }
 
 .laptop {
   position: absolute;
   z-index: -10;
-  right: -250px;
-  transform: rotate(-20deg);
-  width: 800px;
+  left: -250px;
+  top: -100px;
+  transform: rotate(20deg);
+  width: 600px;
 }
 
 .hero-title {

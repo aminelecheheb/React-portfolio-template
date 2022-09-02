@@ -9,7 +9,6 @@ const Header = () => {
     <header>
       <div className="container header__container">
         <img className="star" src={STAR} alt="star" />
-
         <div className="string"></div>
 
         <h1 className="hero-title">
