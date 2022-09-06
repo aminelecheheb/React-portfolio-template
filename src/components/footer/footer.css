@@ -1,0 +1,11 @@
+footer {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+footer h3 {
+  margin-left: 4rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}

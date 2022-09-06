@@ -3,9 +3,9 @@ import { BsPatchCheckFill } from "react-icons/bs";
 
 const Skill = ({ skills }) => {
   return skills.map((item) => {
-    const { skill, status } = item;
+    const { skill, status, id } = item;
     return (
-      <div className="skill">
+      <div className="skill" key={id}>
         <BsPatchCheckFill />
         <div className="one-skill">
           <h4>{skill}</h4>

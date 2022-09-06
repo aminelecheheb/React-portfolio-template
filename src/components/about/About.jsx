@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import ME from "../../assets/me.png";
+import ME from "../../assets/port.jpg";
 import { setTyper, words } from "./typing";
 import { useEffect, useRef } from "react";
 
@@ -63,10 +63,7 @@ const About = () => {
           </a>
         </div>
         <div className="img-wrapper">
-          <img
-            src="https://retro-show-r3tr0.vercel.app/static/416b46a8bd26e2cb606b7fba8166f579/7ac0b/person.jpg"
-            alt=""
-          />
+          <img src={ME} alt="" />
         </div>
       </section>
     </>

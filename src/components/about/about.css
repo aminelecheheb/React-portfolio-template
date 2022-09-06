@@ -9,6 +9,14 @@
   width: 45%;
   height: 45vw;
 }
+.img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-wrapper img {
+  width: 150%;
+}
 
 .about-content {
   background: var(--color-primary-variant);
@@ -35,6 +43,19 @@ h2 span {
 }
 .img-wrapper img {
   margin: 0 auto;
+}
+
+/* -----------------------media-------------------------- */
+@media screen and (max-width: 960px) {
+  .about__container {
+    flex-direction: column;
+    padding-top: 4rem;
+  }
+  .about-content,
+  .img-wrapper {
+    width: 90%;
+    height: 90vw;
+  }
 }
 
 /* ------------------------glitch effect-------------------------- */

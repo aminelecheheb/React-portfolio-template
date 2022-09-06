@@ -14,12 +14,13 @@ const Slider = () => {
         className="mySwiper works-container"
       >
         {pages.map((page) => {
+          const { pageId, data } = page;
           return (
-            <SwiperSlide className="works">
-              {page.map((project) => {
-                const { img, title } = project;
+            <SwiperSlide className="works" key={pageId}>
+              {data.map((project) => {
+                const { img, title, id } = project;
                 return (
-                  <div className="project-container">
+                  <div className="project-container" key={id}>
                     <img src={img} alt={title} />
                   </div>
                 );
@@ -27,22 +28,6 @@ const Slider = () => {
             </SwiperSlide>
           );
         })}
-        {/* <SwiperSlide className="works">
-          <div className="project-container"></div>
-          <div className="project-container"></div>
-          <div className="project-container"></div>
-          <div className="project-container"></div>
-          <div className="project-container"></div>
-          <div className="project-container"></div>
-        </SwiperSlide>
-        <SwiperSlide className="works">
-          <div className="project-container"></div>
-          <div className="project-container"></div>
-          <div className="project-container"></div>
-          <div className="project-container"></div>
-          <div className="project-container"></div>
-          <div className="project-container"></div>
-        </SwiperSlide> */}
       </Swiper>
     </>
   );

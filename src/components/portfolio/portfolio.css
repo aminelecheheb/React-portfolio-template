@@ -38,7 +38,6 @@
 #portfolio .title {
   width: 16.66666667%;
   background-color: var(--color-primary-variant);
-  border-right: 10px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,7 +48,6 @@
   letter-spacing: 4px;
 }
 .works-container {
-  height: 40vw;
   width: 85%;
   align-self: center;
   /* display: flex;
@@ -68,4 +66,32 @@
   width: 100%;
   background-color: var(--color-primary-variant);
   height: 100%;
+}
+
+@media screen and (max-width: 960px) {
+  #portfolio {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  #portfolio .title {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+  #portfolio .title h1 {
+    transform: rotate(0);
+    padding: 1rem;
+  }
+  .works {
+    display: grid;
+    width: 185%;
+    height: 35vw;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .works-container {
+    width: 100%;
+  }
 }

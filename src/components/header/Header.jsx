@@ -7,18 +7,17 @@ import LAPTOP from "../../assets/laptop.png";
 const Header = () => {
   return (
     <header>
-      <div className="container header__container">
-        <img className="star" src={STAR} alt="star" />
-        <div className="string"></div>
-
-        <h1 className="hero-title">
-          Create beautiful, unique, <br /> responsive and fast websites <br />{" "}
-          with <span>CODAMINE</span>
-        </h1>
+      <div className="header__container">
+        <div className="header__text">
+          <h1 className="title">
+            Do you want responsive, unique and fast website?{" "}
+          </h1>
+          <h1 className="hero">that's my profession</h1>
+          <a href="#contact" className="hero-btn">
+            contact us
+          </a>
+        </div>
         <HeaderSocials />
-        <a href="#contact" className="scroll__down">
-          Scroll Down
-        </a>
       </div>
     </header>
   );
