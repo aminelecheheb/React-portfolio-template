@@ -16,14 +16,15 @@
 .text {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  gap: 30vh;
+  justify-content: space-between;
+  /* margin-top: 3rem; */
 }
 .top {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 3rem;
+  gap: 1rem;
 }
 
 .text h1 {
@@ -99,6 +100,10 @@
   }
   .half {
     width: 100%;
+  }
+  .top {
+    gap: 2rem;
+    margin-bottom: 7rem;
   }
 }
 @media screen and (max-width: 600px) {
