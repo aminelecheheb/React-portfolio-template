@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import ME from "../../assets/port.jpg";
+import ME from "../../assets/port.jpeg";
 import { setTyper, words } from "./typing";
 import { useEffect, useRef } from "react";
 
